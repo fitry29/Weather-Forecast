@@ -206,10 +206,16 @@ body{
 
 @media screen and (max-width: 850px) {
     body{
-        background-color: #C2FFC7;
+        padding: 50px 30px;
     }
     .search-box{
         width: 100%;
+    }
+    .search-box input{
+        font-size: 15px;
+    }  
+    .search-box button .fa-search{
+        font-size: 15px;
     }
     .container{
         width: 100%;
