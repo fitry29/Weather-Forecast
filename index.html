@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather Forecast</title>
+</head>
+<body id="body"> 
+    <div class="search-box">
+        <input type="text" id="locationInput" placeholder="Enter your location">
+        <button id="searchButton"><i class="fa fa-search"></i></button>
+    </div>
+    <!-- <div id="welcome-page" class="welcome-page">
+        Hello
+    </div> -->
+    <div id="container" class="container">
+        <div class="weather-info">
+            <div class="details">
+                <div class="top-details">
+                    <p id= "day" class="day"></p>
+                    <p id= "date" class="date"></p>
+                    <div id = "cond-details" class="cond-details">
+                        <div class="condition">
+                            <img id="img-link" src="assets/cloudy.jpg" alt="Weather Condition" title="Weather Condition">
+                            <p id ="cond-text" class="cond-text"></p>
+                        </div>
+                       <hr>
+                        <div class="condition">
+                            <img src="assets/windspeed.png" alt="Wind Speed" title="Wind Speed">
+                            <p id = "wind-text" class="wind-text"></p>
+                        </div>
+                        <hr>
+                        <div class="condition">
+                            <img src="assets/humid.png" alt="Humidity" title="Humidity">
+                            <p id = "humid-text" class="humid-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="no-data-img">
+                    <img src="assets/no_data.png" alt="no location">
+                    <p>Find your city</p>
+                </div>
+                <div class="bottom-details">
+                    <p id = "temp" class="temp"></p>
+                    <p id = "loc" class="loc"></p>
+                    <p id = "country" class="country"><Test/p>
+                </div>
+            </div>
+        </div>
+        <div id="dayforecast" class="dayforecast">
+            <div class="day">
+                <div class="day-cond">
+                    No Forecast for now...
+                </div>
+                <!-- <div class="day-details">
+                    <p class="day-temp">28°C</p>
+                    <p class="day-date">21/12/2024</p>
+                </div> -->
+            </div>
+            <!-- <div class="day">
+                <div class="day-cond">
+                    Sunny
+                </div>
+                <div class="day-details">
+                    <p class="day-temp">28°C</p>
+                    <p class="day-date">21/12/2024</p>
+                </div>
+            </div>
+            <hr>
+            <div class="day">
+                <div class="day-cond">
+                    Sunny
+                </div>
+                <div class="day-details">
+                    <p class="day-temp">28°C</p>
+                    <p class="day-date">21/12/2024</p>
+                </div>
+            </div>
+            <hr>
+            <div class="day">
+                <div class="day-cond">
+                    Sunny
+                </div>
+                <div class="day-details">
+                    <p class="day-temp">28°C</p>
+                    <p class="day-date">21/12/2024</p>
+                </div>
+            </div>
+            <hr>
+            <div class="day">
+                <div class="day-cond">
+                    Sunny
+                </div>
+                <div class="day-details">
+                    <p class="day-temp">28°C</p>
+                    <p class="day-date">21/12/2024</p>
+                </div>
+            </div>            -->
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
