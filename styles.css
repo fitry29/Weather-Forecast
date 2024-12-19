@@ -6,22 +6,27 @@
 }
 
 body{
-    background-color: #C2FFC7;
+    background: #E49BFF;
+    /* background-size:  cover;
+    background-position: inherit; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px 50px;
-    gap: 35px;
-    
+    gap: 35px;    
 }
+
+/* .blur-frame{
+    backdrop-filter: blur(6px);
+} */
 .search-box{
     /* gap: 8px; */
     /* padding: 15px 25px; */
     display: flex;
     justify-content: space-between;
     border-radius: 18px; 
-    background-color: #62825D;
+    background-color: #850F8D;
     width: 30%;
 }
 
@@ -36,9 +41,11 @@ body{
 }
 
 .search-box button{
+    border: none;
     padding: 20px;
     background-color: transparent;
-    border: none;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
 }
 
 .search-box button .fa-search{
@@ -102,6 +109,8 @@ body{
 }
 
 .cond-details{
+    /* background-color: aqua; */
+    height: 100%;
     padding-top: 15px;
     display: none;
     justify-items: start;
@@ -114,7 +123,8 @@ body{
 }
 
 .cond-details .condition{
-    justify-content: center;
+    /* background-color: #62825D; */
+    justify-content: space-between;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -126,12 +136,13 @@ body{
 }
 
 .cond-details .condition img{
+    /* border: 1px solid black; */
     width: 30px;
     height: 30px;
 }
 .cond-details .condition #img-link{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 #no-data-img{
@@ -163,7 +174,7 @@ body{
 }
 
 .dayforecast{
-    background-color: #62825D;
+    background-color: #850F8D;
     padding:  15px 30px;
     width: 45%;
 }
@@ -232,6 +243,9 @@ body{
         padding: 10px 0px;
         width: 100%;
     }
+    .dayforecast hr{
+       margin: 0px 25px;
+    }
     .details{
         gap: 55px;
         padding: 25px 30px;
@@ -259,16 +273,17 @@ body{
     }
     .dayforecast .day{
         gap: 20px;
+        padding: 15px 25px;
     }
     .dayforecast .day .day-cond{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .dayforecast .day .day-details .day-temp{
-        font-size: 22px;
+        font-size: 18px;
     }
     .dayforecast .day .day-details .day-date{
-        font-size: 16px;
+        font-size: 14px;
     }
     
 }
